@@ -1,0 +1,104 @@
+﻿body{
+    background-image: url(Images/Background2.jpg);
+    background-repeat: no-repeat;
+    color:antiquewhite;
+}
+
+.nav-logo-img{
+    max-height:80px;
+}
+
+.fixed-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-size:20pt;
+    background: rgba(0, 0, 0, 0.65);
+    padding-top: 5px;
+    min-height: 90px;
+}
+
+.nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu{
+    min-height: 80px;
+    width: 900px;
+    border:none;
+    text-align: center;
+}
+
+#icon{
+    float:left!important;
+}
+
+#menu li{
+    display: inline-flex;
+    float:none
+}
+
+#menu li a{
+    padding-top: 35px;
+    color: white;
+    font-weight: bold;
+    padding-bottom:5px;
+    border: none!important;
+    background:none!important;
+}
+
+#menu li a:hover{
+    text-decoration: none;
+    color:#f8931d ;
+    padding-bottom:5px;
+}
+
+#body{
+    margin-top:110px;
+}
+
+.body-content{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-area{
+    margin-top: calc(100vh - 470px);
+    text-align: center;
+    font-size: 11pt;
+    border-top: #909090 2px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ececec;
+}
+
+a{
+    color:#f8931d ;
+}
+
+.social-link{
+    color:#f8931d ;
+}
+
+.social-link:hover{
+    color:#ab5019;;
+}
+
+
+.social-icons{
+    font-size: 18pt;
+}
+
+.clear{
+  clear:both;
+}
+
+.WeatherTile{
+    font-weight:600;
+    min-height: 150px!important;
+    border: 2px #ca7248 solid;
+    background-color: #fff;
+}
+

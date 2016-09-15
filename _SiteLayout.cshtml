@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>5 day forecast</title>
+        <div></div>
+        <link href="~/Content/font/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="~/Scripts/jquery-3.1.0.js"></script>
+        <script src="~/Scripts/angular.min.js"></script>
+        <script src="~/Scripts/Jquery.Color.js"></script>
+        <script src="~/App/app.js"></script>
+        <script src="~/App/Scripts.js"></script>
+        <script src="~/Scripts/API/OpenWeatherAPI.js"></script>
+        <script src="~/App/WeatherForcast/WeatherTiles-Controller.js"></script>
+        
+        <!-- Bootstrap -->
+        <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="~/bootstrap/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body >
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=640132686155735";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <header class="fixed-nav">
+        <div>
+            
+                <nav>
+                    <ul id="menu" class="nav nav-tabs">
+                        <li id="icon"><div class="float-left">
+                          
+                        </div></li>
+                       
+                        <li><a href="#WeatherContainer">Weather Forecast</a></li>
+                    
+
+                   
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="body" ng-app="Main">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+            
+        </div>
+        
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>
